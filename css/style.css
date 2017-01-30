@@ -443,7 +443,7 @@ a.button:hover {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 480px) {
     .heroimg {
         margin-top: 10%;
     }
