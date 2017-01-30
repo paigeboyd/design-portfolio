@@ -448,3 +448,32 @@ a.button:hover {
         margin-top: 10%;
     }
 }
+
+@media screen and (max-width: 350px) {
+    nav {
+        margin-bottom: 50px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        letter-spacing: 8px;
+    }
+    
+    .heroimg {
+        margin-top: 15%;
+    }
+    
+    .title {
+        font-size: 4.5em;
+    }
+    
+    .bigtitle {
+        font-size: 3.2em;
+        margin-bottom: 20px;
+    }
+
+    
+    .bluebg {
+        margin-top: -13%;
+    }
+}
