@@ -456,6 +456,11 @@ a.button:hover {
         letter-spacing: 10px;
     }
     
+    .heroimg {
+        margin-top: -3%;
+        width: 100%;
+    }
+    
     .title {
         font-size: 4.4em;
     }
@@ -488,8 +493,6 @@ a.button:hover {
         font-size: 2em;
         letter-spacing: 8px;
     }
-    
-    
     
     .title {
         font-size: 4.4em;
