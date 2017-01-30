@@ -44,6 +44,9 @@ a:hover {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1000px;   
+}
 
 
 /* ----- HEADER ----- */
@@ -177,9 +180,7 @@ h3 {
     max-width: 100%;
 }
 
-.textcontainer {
-    max-width: 960px;
-}
+
 
 
 /* ----- CONTACT SECTION ----- */
