@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>Homepage | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- STYLESHEETS & FAVICON -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    
+    
+    <!-- GOOGLE ANALYTICS -->
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+  
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    <header>
+        
+        <h1 class="animated fadeInUp">Paige Boyd</h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="#hello">About</a></li>
+                <li><a href="#work">Work</a></li>
+               <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="CV.pdf">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+
+       
+        <section id="about">
+    
+             <img class="heroimg" src="images/hero.png">
+        
+
+        <h3 name="hello" id="hello">Hello</h3>
+        <h4 class="intro">I’m Paige, an <a href="http://ixdbelfast.org/" target="_blank">Interaction Design</a> Student at Belfast School of Art.</h4> 
+          <hr class="horizline">  
+         <p class="bio">My passion is designing. Whether it's for the web or print, I am constantly experimenting and trying out new techniques and ideas to better my skills as a designer. I also enjoy illustrating and occasionally dabbling in photography.
+            <br>
+            <br>
+             I'm currently studying <a href="http://ixdbelfast.org/" target="_blank">BDes (Hons) Interaction Design</a> at Belfast School of Art. Since beginning my degree education, I've developed a passion for user interface design. I love pushing the boundaries of what a website is expected to look like by playing around with dynamic and modern designs or incorporating illustrations. At the moment I'm on a year long placement with Ulster University as the Web &amp; Multimedia Content Developer for the School of Art, Design and the Built Environment. 
+            <br>
+            <br>
+             When I’m not focusing on university or designing, I’m most likely doodling in a sketchbook, taking photos of the sunset or on <a href="http://instagram.com/paigeboyd1" target="_blank">Instagram</a>!</p> 
+        </section>
+            
+        <section id="work" name="work">
+        
+        <h3 class="portfolio">Portfolio</h3>
+            
+            <nav class="skills">UI Design  -  Web Development  -  Illustration  -  Icon Design</nav>
+            
+            <div class="grid">
+            <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/wanderlustimg.png" alt="Wanderlust Website thumbnail">
+                  <div class="overlay">
+                    <h2>Wanderlust: Icon Set <br>
+                    <span class="small">Icon Design, Illustration, Web Dev</span></h2>
+                    <a class="info" href="portfolio/wanderlust.html">View Project</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+            </div><!-- closes col-md-4 portfolio-item div -->
+                
+            
+                <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/redesignprojimg.png" alt="Redesign Project thumbnail">
+                <div class="overlay">
+                    <h2>Redesign Project <br>
+                    <span class="small">UI Design, Illustration</span></h2>
+                    <a class="info" href="portfolio/redesignproj.html">View Project</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+             
+            </div><!-- closes col-md-4 portfolio-item div -->
+                
+                
+            <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/extinctbirdimg.png" alt="Extinct Bird website thumbnail">
+                <div class="overlay">
+                    <h2>Finding an Extinct Bird <br>
+                    <span class="small">UI Design, Web Dev, Illustration</span></h2>
+                    <a class="info" href="portfolio/extinctbird.html">View Project</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+                
+            </div> <!-- closes col-md-4 portfolio-item div -->
+        </div> <!-- closes row div -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/elementsimg.png" alt="Designer Inspiration thumbnail">
+                <div class="overlay">
+                    <h2>Elements <br>
+                    <span class="small">Web Development, Illustration</span></h2>
+                    <a class="info" href="#work">Coming Soon!</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+              
+            </div> <!-- closes col-md-4 portfolio-item div -->
+            
+            
+            <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/cssilluimg.png" alt="CSS Illustraions thumbnail">
+                <div class="overlay">
+                    <h2>CSS Illustrations <br>
+                    <span class="small">Web Development, Illustration</span></h2>
+                    <a class="info" href="portfolio/cssillustrations.html">View Project</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+               
+            </div><!-- closes col-md-4 portfolio-item div -->
+            
+            
+            <div class="col-md-4 portfolio-item">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/workimg/thirstyimg.png" alt="CSS Illustraions thumbnail">
+                <div class="overlay">
+                    <h2>Thirsty? App <br>
+                    <span class="small">Web Development, UI Design</span></h2>
+                    <a class="info" href="portfolio/thirsty.html">View Project</a>
+                </div> <!-- closes overlay div -->
+                </div> <!-- closes hovereffect div -->
+               
+            </div><!-- closes col-md-4 portfolio-item div -->
+            </div> <!-- closes row div -->
+                
+                 
+            
+        </div><!-- closes grid div -->
+          
+      </section> <!-- closes work section -->
+            
+            <section id="contact" name="contact">
+            <div class="contactpadding">
+            <h3 id="hello">Contact</h3>
+            <h4 class="intro">Follow me on social media to see what I'm up to, or drop me an email if you fancy a chat!</h4> 
+                <hr class="horizline">
+                
+            <div class="smicons">
+            <a href="https://twitter.com/ppppaige_" target="_blank">    
+                <img src="icons/twitter.svg" alt="Twitter icon" style="height: 40px;" class="growhover">
+            </a> 
+                
+            <a href="https://dribbble.com/paigeboyd" target="_blank">    
+                <img src="icons/dribbble.svg" alt="Dribbble icon" style="height: 40px;" class="growhover">
+            </a>
+                
+            <a href="http://paigeboyddesign.tumblr.com/" target="_blank">  
+                <img src="icons/tumblr.svg" alt="Tumblr icon" style="height: 40px;" class="growhover">
+            </a>
+                
+            <a href="https://instagram.com/paigeboyd1" target="_blank">
+                <img src="icons/instagram.svg" alt="Instagram icon" style="height: 40px;" class="growhover">
+            </a>
+                
+            <a href="https://github.com/paigeboyd" target="_blank">
+                <img src="icons/github.svg" alt="GitHub icon" style="height: 40px;" class="growhover">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/paigeboyd1" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn icon" style="height: 40px;" class="growhover">
+            </a>
+            
+            <a href="mailto:paigeboyd1@gmail.com?Subject=IxD Portfolio" target="_blank">
+                <img src="icons/emailsend.svg" alt="Email icon" style="height: 40px;" class="growhover">
+            </a>
+                
+            </div> <!-- closes .smicons -->
+                
+    
+                </div><!-- closes contactpadding div -->
+                
+            </section> <!-- closes contact section -->
+    
+        
+   <!-- </div> <!-- closes page_effect div -->
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+   
+</body>
+</html>
