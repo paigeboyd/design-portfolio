@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finding an Extinct NZ Bird</title>
+    
+<!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Horizontal Scroll Plug-in from: https://github.com/alvarotrigo/fullPage.js -->
+<!-- DONT CHANGE ORDER OF THESE -->
+    <link rel="stylesheet" type="text/css" href="fullPage/jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="fullPage/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+<!-- Initiates the plugin -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+        loopHorizontal: false
+    });
+});
+    </script>
+    
+<!-- GOOGLE FONTS -->    
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+<!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="findingbird.css" />
+ 
+<!-- STYLE/GOOGLE MAPS API -->
+   
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+            google.maps.event.addDomListener(window, 'load', init); //Means when window finishes loading to create this Google Map
+        
+            function init() {
+                var mapOptions = {
+                    zoom: 7, //How zoomed in the map should be. (required) 
+
+                    center: new google.maps.LatLng(-45.4416668, 168.6920145), // The latitude and longitude to center the map (required)
+                    
+                    //This is for the styling of the map
+                    styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#5b6571"},{"lightness":"35"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"color":"#f3f4f4"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"weight":0.9},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#83cead"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"on"},{"color":"#fee379"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.highway.controlled_access","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"simplified"},{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#7fc8ed"}]}]
+                };
+
+
+                // HTML DOM element that will contain map - using <div id="map"> in body
+                var mapElement = document.getElementById('map');
+
+                var map = new google.maps.Map(mapElement, mapOptions); //Means to create the map defined above
+
+                // For the marker on the map
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-45.4416668, 168.6920145),
+                    map: map,
+                    title: 'Murchison Mountains, South Island, NZ'
+                });
+            } 
+</script>
+    
+<!-- JavaScript for colour changing hover effects -->    
+    <script type="text/javascript">
+        document.getElementByClass('indigoblue').onmouseover.style.color = "#324AB2;';
+        document.getElementByClass('green').onmouseover.style.color = "#0BDA51;';
+        document.getElementByClass('olivegreen').onmouseover.style.color = "#556B2F;';
+        document.getElementByClass('purplishblack').onmouseover.style.color = "#2E0854;';
+        document.getElementByClass('scarlet').onmouseover.style.color = "#FF2400;';
+        document.getElementByClass('waxpink').onmouseover.style.color = "#FFE1E6;';
+        document.getElementByClass('red').onmouseover.style.color = "#FF0000;';
+        document.getElementByClass('reddishbrown').onmouseover.style.color = "#8E2323;';
+        document.getElementByClass('palepurple').onmouseover.style.color = "#B19CD9;';
+        document.getElementByClass('black').onmouseover.style.color = "#000;';
+</script>
+    
+</head>
+
+    
+    
+    
+<body>
+    
+    <div id="fullpage">
+
+<div class="section">
+   
+    <div class="slide" id="slideno1">
+    <header>   
+        <img id="ngtitle" class="hvr-grow" src="images/nationalgeographic.png" alt="national geographic logo title">
+        <h1 class="maintitle">Finding an<br />
+            &#39;Extinct&#39;<br /><!-- Using the html number for the single quotes! -->
+                New Zealand Bird</h1>
+        
+            <h3 class="description">Rediscovered by a Persevering Doctor, the Flightless, Colorful Takahe, or 'Wanderer', Struggles to Survive</h3>
+        
+                <p class="author">&mdash; By R. V. Francis Smith</p> <!-- &mdash; is for a the hypen! -->
+    </header>
+        
+        </div> 
+             
+           
+<div class="slide">
+    <article>
+        <section>
+            <p id="summary">In New Zealand's rugged Fiordland a bird thought extinct for fifty years is <i>struggling for survival</i>. Behind the rare species in its fight for life is all the protective power of the Dominion Government.</p>
+            
+            <p class="intro">Rediscovery of this flightless bird, the large, brilliant-hued native rail which the Maoris called takahea, meaning "wandering at large," excited almost as much interest in New Zealand as discovery of a living passenger pigeon would arouse in America. <br />
+                <br />
+                To zoologists and bird lovers throughout the world, reappearance of takahea, now called the takahe, was a notable event. They had a scientific name for the creature-Notornis hochstetteri, the first half of which means "bird of the south" - but they knew tantalizingly little about it and had considered it lost in the limbo of vanished species.</p> <br />
+            <p>To the rediscoverer, Dr. G. B. Orbell, a physician of Invercargill, New Zealand, the dramatic sight of a takahe alive came as the reward of years of patient and systematic search. Only four of the birds were known to science when he made his discovery on the shore of a lake in what is now called Notornis Valley. Since August, 1898, there had been no authentic report of one being caught, or even seen.</p>
+            
+        </section>
+    </article>
+    
+    </div>
+    <div class="slide">
+    <article>
+        <section>
+            <h2>Futile Wings Have Three-Foot Span</h2> 
+            <p>A primitive type of large moor hen found only in New Zealand, the takahe is unlike any other member of the world-wide rail family to which it belongs. For example, despite its membership in an aquatic family, it avoids swamps and rivers. It does, however, share some of the clan's characteristics, such as a large frontal shield.</p>
+<br />
+            <img id="takaheaportrait" class="hvr-sink" src="images/takaheportrait.png" alt="Close up image of Adult Takahea" style="height:180px;width:150px;">
+            <p>The full-grown takahe stands some twenty inches high and weighs about six pounds. The wings, though incapable of flight, may have a <i>three-foot span</i>. The adult bird is vividly colored. Head, neck, breast, and flanks are an <span class="indigoblue">iridescent indigo blue</span>, becoming brighter on the shoulders and changing to a <span class="green">malachite green</span> on the mantle. <br />
+
+                <br />
+                The dark rump and upper tail coverts are <span class="olivegreen">olive green</span>, the abdomen and thighs <span class="purplishblack">purplish black</span>, and the under tail coverts white. The powerful beak is <span class="scarlet">scarlet</span> at the base, fading outwards to a <span class="waxpink">wax pink</span>. Legs and feet are <span class="red">red</span>, eyes <span class="reddishbrown">reddish brown</span>.</p>
+            
+            
+
+
+</section>
+    </article>
+    </div>
+    
+    <div class="slide">
+        <article>
+        <section> 
+                <p>This brilliant color scheme is seen to full advantage only when the bird is approaching the observer or passing at right angles to him. In contrast to its showy parents, the young takahe wears only a uniform, <span class="black">soft black down</span>. The black beak is white-tipped, and the disproportionately large legs are a <span class="palepurple">pale purple</span>.</p>
+            <br />
+            <table class="takaheislands"> <!-- placed here for styling -->
+        <caption><i>Estimated carrying capacity of islands with Takahe.</i></caption>
+        <tr>
+            <th>Island</th>
+            <th>Size (ha)</th>
+            <th>Habitat</th>
+            <th>No of Takahe Pairs</th>
+        </tr>
+        <tr>
+            <td>Kapiti</td>
+            <td>2023</td>
+            <td>Mostly forest</td>
+            <td>&lt; 10</td> <!--&lt; is code for '<' -->
+        </tr>
+        <tr>
+            <td>Mana</td>
+            <td>217</td>
+            <td>Mostly grassland</td>
+            <td>&gt; 10</td> <!--&gt; is code for'>' -->
+        </tr>
+        <tr>
+            <td>Maud</td>
+            <td>309</td>
+            <td>Mixed forest/grass</td>
+            <td>7 - 10</td>
+        </tr>
+        <tr>
+            <td>Tiritiri</td>
+            <td>210</td>
+            <td>Mixed forest/grass</td>
+            <td>10</td>
+        </tr>
+    </table>
+            
+            <p>In New Zealand's ornithological history, extinction, or near extinction, has been the lot of many species as a result of settlement. Originally, native birds had no enemies, and the vegetation which affords them cover was not subject to browsing by animals.</p>
+            <p>
+                <br />
+                Under these favorable conditions many unusual forms of life, including birds of little or no power of flight, were able to survive and thrive.</p>
+
+            </section>
+        </article>
+    </div>
+     
+    <div class="slide">
+        <article>
+        <section> 
+                <blockquote>
+                    <p class="quote"> &ldquo; It originally occurred throughout forest and grass ecosystems. Today it is restricted to alpine tussock grasslands on the mainland and feeds primarily on juices from the bases of snow tussock and a species of fern rhizome. It eats introduced grasses on the islands. It usually lays two eggs and chicks can begin breeding at the end of their first year, but usually start in their second. It is long-lived, probably 14-20 years. &rdquo; <br /> </p> <!-- &ldquo; - opening quotation marks  &rdquo; - closing quotation marks - prevents the straight lines -->
+               <p class="author"> &mdash; Heather and Robertson </p> <!-- &mdash; is for the hyphen! -->
+                </blockquote>
+
+            </section>
+        </article>
+    </div> 
+
+<div class="slide">
+<article>
+<section>   
+    <h2>Vanished Birds Include 12-Foot Moa</h2>
+        <p>Before the arrival of Capt. James Cook in 1769, birds were the dominant land vertebrates. The only land mammals were the dog, a Polynesian rat, and two species of bats. The dog and rat had been introduced by the Maoris on their second migration, about A. D. 1150.</p>
+
+        <p id="summaryother">The first living takahe known to Europeans was purposely killed and eaten. It was caught by a sealing gang on Resolution Island, near the southwest end of South Island , in 1849. Two years later a party of Maoris caught a second bird in Thompson Sound, about forty miles farther north. </p>
+    <br />
+    <p>After the Maoris had caused the extinction of the huge flightless moa, one species of which was twelve feet high, European settlement brought about more extensive changes. Ferrets, stoats, and weasels were introduced to control a plague of rabbits, and these, with cats, dogs, and other predators, virtually sealed the fate of numerous native species, among them the takahe.</p>
+    <br />
+    <p>Luckily, the skins of both birds were obtained by Mr. W. D. B. Mantell, who in 1847 had discovered the semi fossil remains of the North Island variety (duly named Notornis mantelli by Sir Richard Owen, of London). The skins were sent to the British Museum.</p>
+    
+</section>    
+</article>
+</div>
+
+    <div class="slide">
+        <article>
+            <section> 
+                <p>Twenty-eight years passed before another specimen appeared. A rabbiter's dog caught it near the south end of Lake Te Anau. The bird was destined for the cooking pot when it was rescued by a farm manager and eventually sold to a museum in Dresden, Germany, for &pound;105.</p>
+                <img id="takahesold" class="hvr-grow" src="images/takahesold.png" alt="Illustration of a takahe and money bag" style="height:160px;width:160px;">
+<br />
+        <p>After close examination, Dr. Adolph B. Meyer of the Dresden museum found that this bird was sufficiently different from the North Island semi fossil form found by Mantell to warrant a distinct name. Accordingly, the name Notornis hochstetteri was given the present species.</p>
+                <br />
+                <p>The fourth specimen was caught by a dog on the shore of Middle Fiord of Lake Te Anau in 1898. The bird was bought by the Government for &pound;250 to ensure that it remained in New Zealand. <br />          
+            </section>
+        </article>
+    </div>
+
+    
+    <div class="slide">
+        <article>
+            <section> 
+                 <div id="map"></div>
+                <p>Preserved in the Otago Museum at Dunedin, it still is the only mounted specimen in the country, for no more takahe were known until Dr. Orbell's discovery.</p> 
+                <br />
+                <p>Notornis Valley, in South Island's Murchison Mountains, lies only six miles from a main road; yet it hid the takahe from human sight for decades. <br />
+                    <br />
+                    From boyhood Dr. G. B. Orbell, an Invercargill physician, reiused to believe the creature lost. After thirty years his quest succeeded; Dr. Orbell tracked the takahe to the scene of its last stand in one of the wildest parts of the Dominion.</p>
+  
+            </section>
+        </article>
+    </div>
+
+    
+    
+<div class="slide">
+<article>
+<section>    
+    <h2>A Thirty-Year Quest Begins</h2>
+    <img id="leftimg" class="hvr-grow-rotate" src="images/bentbilliardpipe.png" alt="Photograph of Dr Orbell and Human Ken">
+        <p>Dr. Orbell's interest in the creature began more than thirty years ago when, as a boy, he found an old photograph showing the museum bird in a case. His mother told its story and explained that the bird was supposed to be extinct.</p>
+    
+    <br />
+        <p>That word "supposed" stimulated Dr. Orbell's adventurous spirit, and he learned all he could about the species. From game rangers and from men who had probed the fastnesses of Fiordland, from hearsay and from stories told around campfires on numerous hunting trips, Dr. Orbell picked up fragments of information about possible takahe hiding places.</p>
+    <br />
+        <p>In 1945 Dr. Orbell built a summer home at Lake Te Anau, where two of the birds had been caught. The question of the takahe's existence and whereabouts was always with him, but he seldom mentioned the matter except jokingly or as a bait to catch information. In this way he learned that a man who knew the country round about always carried his rifle loaded when in a certain area. <br />
+            
+            "It might be worth &pound;400 to &pound;500," the man said with a knowing air.</p>
+    
+ 
+</section>    
+</article>   
+</div>
+    
+<div class="slide">
+<article>
+<section>   
+    <h2>Severe Winters Limit Food</h2>
+    <p>From observations over three nesting seasons, it seems that most, <i>if not all</i>, of the birds in the main Notornis Valley breed yearly, but very few chicks are hatched and raised.</p>
+    
+   <!-- Placed here for styling - originally the third paragraph -->
+    <p id="longaside">The availability of snow grass and other food during severe winters, when the area is deeply covered with snow, is an important factor in the survival of the species. A dead adult bird, untouched by predators, was found in the main valley in the spring of 1949. This and other complete skeletons have suggested that starvation is a not uncommon cause of death.</p>
+
+    <br />
+    <p>In the 1949-50 season, 40 percent of the observed eggs were totally infertile, only three chicks were hatched, and by February, 1950, only one remained alive. It is now known, however, that several birds besides those under observation were nesting. Every endeavor is being made to preserve these contemporaries of New Zealand's extinct giant moa, swan, and eagle; interesting creatures sorely missed. <br />
+    <br />
+            But if measures to combat predators prove ineffective, if nesting shelter and food suffer serious depletion, if a severe winter strikes, or if infertility increases - if anyone or a combination of these mishaps overtakes back-to-the-wall notornis - then the species must inevitably join the heath hen, the dodo, the great auk, and others that are lost to the world <b>forever</b>.</p>
+</section>
+</article>    
+</div>
+
+    
+<div class="slide">
+<article>
+<aside>    
+    <h2>New Zealand</h2>
+        <p>New Zealand is a fertile and mountainous group of islands in the southwestern Pacific Ocean. "It is a land uplifted high," wrote Abel Tasman, a Dutch navigator who was the first European to sight New Zealand, in 1642. Snowy peaks, fjord-scarred shores, and pastures dotted with sheep define this country.</p>
+<br />
+    <img id="nzmap" class="hvr-grow-rotate" src="images/nzmap.png" alt="flat design inspired outline of New Zealand" style="height: 220px; width: 160px;">
+        <p>New Zealand, a parliamentary democracy modeled on that of the United Kingdom, has been a self-governing British dominion since 1907. It became a founding member of the British Commonwealth in 1926.</p>
+    <br />
+    <p>The export-driven country, whose chief trading partner used to be the United Kingdom, faltered in 1973 when Britain joined the European Union. The loss of preferential treatment prompted a search for new markets. Japan, Australia, and the U.S. now buy half of all exports, which include wool, mutton, lamb, beef, cheese, fish, and chemicals.
+    </p>
+    
+    </aside>       
+</article>    
+       
+</div>
+    
+    <div class="slide" id="nonext">
+<article>
+<aside>    
+    <img id="maori" class="hvr-grow" src="images/maori.png" alt="Flat Design inspired Maori character" style="height:250px; width:145px;">    
+    <p>One in three citizens-Kiwis-lives in or around the city of Auckland. Rugby clubs with names such as Canterbury and Wellington reveal a nation peopled mostly by descendants of British settlers. The indigenous Maori constitute about 15 percent of New Zealanders; recent immigrants-primarily from Samoa and Fiji-make Auckland one of the world's largest Polynesian cities.</p>
+    <br />
+        <p>New Zealand plays an active role in helping democratic nations and emerging Pacific island economies. It sent troops to East Timor when violence broke out in 1999, and it provided millions of dollars to the South Pacific island of Niue after it was devastated by a tropical cyclone in 2004. Niue and the Cook Islands enjoy a status of self-government in free association with New Zealand. </p>
+    </aside>       
+</article>    
+       
+</div>
+
+<div class="slide" >
+<article>
+<aside> 
+    <img src="images/infographic.png" alt="Infographic of Fast Facts about New Zealand">
+</aside>    
+</article>    
+    
+</div>
+        </div> <!-- Closes the section div -->
+    
+    
+    
+    <div class="section" id="footerbg"> 
+            <article>
+                <footer>
+                    <footnotes>
+                        <p>See, in the National Geographic Magazine: "The Columbus of the Pacific: Captain James Cook," by J. R. Hildebrand, January, 1927; and "Tuatara: 'Living Fossils' Walk on Well-Nigh Inaccessible Rocky Islands off the Coast of New Zealand," by Frieda Cobb Blanchard, May, 1935.</p>
+                        
+                    </footnotes>
+    
+        <small>
+            <br />
+            <p class="cite">Copyright 1952. R. V. Francis Smith</p>
+                    <p class="cite">Published by the National Geographic Society, Washington, D.C.</p>
+            <br />
+            <br />
+            <p class="cite">Article: Copyright, 1952, by National Geographic Society, Washington, D.C. International copyright secured. All rights reserved. Printed in U.S.A. Entered at the Post Office at Washington, D.C., as Second Class Mail Matter. Acceptance for mailing at special rate of postage provided for in Sec. 1103, Act of October 3, 1917, authorized July 1, 1918. Cover design and names registered in United States Patent Office.</p>
+            <br />
+            <p>New Zealand Facts: Copyright, 1995-2015, by National Geographic Society, Washington, D.C.</p>
+            </small>
+    </footer></article>
+    
+    
+    
+        </div>
+    
+    
+    </div> <!-- Closes fullpage div - keep at very end-->   
+</body> 
+</html>
