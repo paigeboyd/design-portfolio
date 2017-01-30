@@ -137,6 +137,7 @@ h3 {
     font-weight: 700;
     padding-bottom: 10px;
     color: #2b2e33;
+    line-height: 24px;
 }
 
 .bio {
@@ -148,15 +149,6 @@ h3 {
     padding-bottom: 20px;
     font-size: 1.1em;
 }
-
-/*.heroimg {
-    display: block;
-    margin: 0 auto;
-    width: 88vw;
-    padding-bottom: 5%;
-    margin-left: -60px;
-    margin-top: 5%;
-}*/
 
 .heroimg {
     display: block;
@@ -201,7 +193,7 @@ h3 {
     text-align: left;
 }
 
-.contactpadding {
+.extrapadding {
     margin-left: 15px; /*keeps it inline with rest of content */
 }
 
@@ -397,6 +389,10 @@ a.button:hover {
 
 
 
+
+
+
+
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (min-width: 1200px) {
@@ -423,11 +419,17 @@ a.button:hover {
     .social {
         margin-bottom: 40px; /* adding space before the form */
     }
-    /*
-    .heroimg {
-        margin-left: -4%;
-        
-    }*/
+    #hello {
+        margin-left: 10px;
+    }
+    
+    .intro {
+        margin-left: 10px;
+    }
+    
+    .horizline {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -443,6 +445,7 @@ a.button:hover {
         padding-right: 5px; 
         font-size: 1em;
     }
+    
     .contactpadding {
         margin-left: 10px;
     }
@@ -454,11 +457,6 @@ a.button:hover {
     h1 {
         font-size: 2.3em;
         letter-spacing: 10px;
-    }
-    
-    .heroimg {
-        margin-top: -3%;
-        width: 100%;
     }
     
     .title {
