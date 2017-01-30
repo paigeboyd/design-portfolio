@@ -358,7 +358,7 @@ a.button:hover {
 /* ----- CASE STUDY PAGES ----- */
 
 .title {
-    font-family: BiloxiScript;
+    font-family: 'BiloxiScript', 'Montserrat', serif;
     font-size: 8em;
     text-align: left;
     margin-top: 3%;
