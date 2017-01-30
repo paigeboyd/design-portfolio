@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>Wanderlust | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- STYLESHEETS & FAVICON -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    <!-- GOOGLE ANALYTICS -->
+
+    
+    <!-- LIGHTBOX PLUGIN -->
+    <script src="../assets/lightbox-plus-jquery.min.js"></script>
+    
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <header>
+        
+        <h1 class="animated fadeInUp"><a href="../index.html">Paige Boyd</a></h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="../index.html#hello">About</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="../CV.pdf">CV</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+        <h2 class="title">Wanderlust</h2>
+        
+        <div class="bluebg">
+        <p class="bio bluepadding">During my second year of university we were given an assignment in our Creative Entrepreneurship module which involved designing and illustrating a set of icons and a website to go along with them. The aim of this module was to give an insight into the world of digital product design and the product and business models that come along with it.
+            <br><br>
+        The only requirement set in the icons brief was that they had to look like they were part of a set. As far as the website went, it had to be a single page website which was to be used to promote the icons and allow visitors to download them.
+        
+        
+        </div> <!-- closes bluebg div -->
+        
+        <video width="80%" autoplay loop>
+            <source src="videos/wanderlustprev.m4v" type="video/mp4">
+            Your browser does not support the video tag, sorry! Try upgrading to the latest version of your browser to see how awesome this project is.
+        </video>
+        
+        <h3 class="csheader">My Solution</h3> 
+        <hr class="horizline">
+        <p class="bio">Almost immediately I knew I wanted to create icons based on architecture. I thought about creating icons for famous landmarks, and eventually narrowed this down to European Landmarks. I decided on having a brand for the icons and the website, that the icons were going to be an illustrative style rather than lines, and that they would be free to download with the option for the user to share them on Twitter if they liked it. 
+        </p>
+        
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/wanderlust1.png" alt="project sketches - prague">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/wanderlust2.png" alt="project sketches - icons">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/wanderlust3.png" alt="project sketches - wireframing">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/wanderlust4.png" alt="project sketches - handlettering">
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        <br>
+        
+        <h3 class="csheader">The Process</h3>
+        <hr class="horizline">
+        <p class="bio">As always, I started out on paper. I spent quite a long time sketching out ideas for the icons; considering their shape and how the landmark would be contained within the shape. Once I had this decided I moved on to sketching some final designs that I could take into Adobe Illustrator. Once in Illustrator I began by creating the backgrounds.
+            <br> <br>
+        I decided to create a day and night set, so I created gradients to reflect this and added these to the icon shape. I used my sketches and photographs of the landmarks to map out the shape using vector shapes in Illustrator, to keep it simple at the beginning. Once the shape of the landmark was created, I used the eyedropper tool to take colours from the photographs, and then moved back to the shapes and pen tools to create the finer details. I handlettered the 'Wanderlust' logo, and vectorised it in Illustrator also.
+            <br><br>
+        I decided to keep the website simple, using sections within the HTML to divide the website up. I used HTML and CSS for the layout and design of the website, and JavaScript to add interactions such as a smooth scroll and a switch which changed the icon sets from day to night.
+            <br><br>
+        I documented my design process on <a  href="http://paigeboyddesign.tumblr.com/tagged/des311" target="_blank">Tumblr</a>, where you can see how I arrived at the final solution in greater detail. If you're interested it taking a peek at the code, you can see it on <a href="https://github.com/paigeboyd/DES311-Icons" target="_blank">GitHub</a>.
+        <br><br> </p>
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/iconsteps/parisstep1.png" alt="icon project - step 1 background">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/iconsteps/parisstep2.png" alt="icon project - step 2 outline">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/iconsteps/parisstep3.png" alt="icon project - step 3 details">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/wanderlust/iconsteps/parisstep4.png" alt="icon project - step 4 finished">
+            </div>
+        </div>
+        <!-- /.row --> 
+        <br><br>
+        
+
+        <h3 class="csheader">Final Outcome</h3>
+        <hr class="horizline">
+        <p class="bio">I am really pleased with how the icons came out. I wanted to spend a lot of time making them as detailed as possible so that it was obvious what the landmark was and I think I achieved this. I like the idea of the switch to change the icon sets from day to night. I think I have managed to keep the icons quite consistent and of the same overall style, and the handlettered branding ties the sets together. I would love to continue adding to these as my illustration skills have improved a lot since beginning this project.</p>
+            <br>
+            <a href="wanderlust/index.html" class="button">Take a Peek!</a>
+  
+    </div> <!-- closes .wrapper div -->
+      
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+</body>
+</html>

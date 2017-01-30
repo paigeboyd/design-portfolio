@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>Thirsty | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- STYLESHEETS & FAVICON -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    
+    <!-- GOOGLE ANALYTICS -->
+
+    
+    <!-- LIGHTBOX PLUGIN -->
+    <script src="../assets/lightbox-plus-jquery.min.js"></script>
+    
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <header>
+        
+        <h1 class="animated fadeInUp"><a href="../index.html">Paige Boyd</a></h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="../index.html#hello">About</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="../CV.pdf">CV</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+ 
+        <h2 class="title">Thirsty?</h2>
+        
+        <div class="bluebg">
+        <p class="bio"> As part of a year 2 Integrated Multimedia Development module, we were given a group project to develop a web app which solved a problem. 
+        From the outset my group wanted to create something which solved a 'problem' many people faced in their day-to-day lives. Through brainstorming we reached the question of what can be fixed in the mornings when people are going to work or university?    
+        <br><br>
+        We then reached the decision to create an app called Thirsty? Which is basically a 'fast-lane' in the coffee shop during rush hour. We targeted the app towards professionals and students, who didn't have time to stand in long queues before class or work.
+            </p>
+        
+        
+        </div> <!-- closes bluebg div -->
+      
+      <br>
+        
+         <video width="80%" autoplay loop>
+            <source src="videos/thirstyprev.m4v" type="video/mp4">
+            Your browser does not support the video tag, sorry! Try upgrading to the latest version of your browser to see how awesome this project is.
+        </video>
+        
+        <h3 class="csheader">My Role</h3> 
+        <hr class="horizline">
+        <p class="bio">My role in the group was primarily to be the User Interface Designer. I designed the website with ease of use in mind, enabling users to order their coffee on the go, without needing to go through a complicated process. Obviously speed is an important element to this, so we tried to minimise the process in to as few steps as possible, with the idea that once the user had used the app once, the process would be streamlined, as the app would remember their favourite choice and would store their details, eliminating the longest step.
+        </p>
+        
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/thirsty/thirsty1.png" alt="project sketches - logo">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/thirsty/thirsty2.png" alt="project sketches - process">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/thirsty/thirsty3.png" alt="project sketches - wireframe">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/thirsty/thirsty4.png" alt="project sketches - wireframe">
+            </div>
+        </div>
+        <!-- /.row -->
+        <br>
+        
+        <h3 class="csheader">The Process</h3>
+        <hr class="horizline">
+        <p class="bio">I kept the interface clean and simple and developed a template based on the design I created using Adobe Illustrator. I used HTML, CSS and JavaScript to bulk out the template, but felt that more interaction was needed to enhance the overall user experience. To so this I worked with a few jQuery plugins as these handled interactions such as a smooth scroll, hover states and animations on the content once the user scrolled to it.
+            <br><br></p>
+        <img src="images/thirstyscreenshot.png" style="width:100%">  
+        <br><br>
+        
+
+        <h3 class="csheader">Final Outcome</h3>
+        <hr class="horizline">
+        <p class="bio">As this was a university project, the brief required us to work to a strict time frame, and in an agile environment. This was a new experience for me, and was a great insight into how projects are handled in the real world. With this being such a big task it was interesting to see how my group worked to strict time frames and it taught me a lot about how to prioritise tasks to get the work done on time. I was pleased that I got to undertake the role of UI designer, as this is where I feel my strengths lie. This project is no longer live however you can see the code on <a href="https://github.com/paigeboyd/Thirsty-Group-App" target="_blank">GitHub</a> and screenshots below.</p>
+        
+        
+        <a href="https://www.flickr.com/photos/paigeboyd1/albums/72157679233419026" target="_blank" class="button">Screenshots</a>
+        
+        </div>
+    </div> <!-- closes .wrapper div -->
+      
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+</body>
+</html>

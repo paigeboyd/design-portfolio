@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>Elements | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- STYLESHEETS & FAVICON -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    <!-- GOOGLE ANALYTICS -->
+
+    
+    <!-- LIGHTBOX PLUGIN -->
+    <script src="../assets/lightbox-plus-jquery.min.js"></script>
+    
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <header>
+        
+        <h1 class="animated fadeInUp"><a href="../index.html">Paige Boyd</a></h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="../index.html#hello">About</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="../CV.pdf">CV</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+        <h2 class="title">Elements</h2>
+        
+        <div class="bluebg">
+        <p class="bio bluepadding">A year 2 university project, the Elements project brief involved creating a website as a study aid for children aged 9-12 that would be learning about the periodic table in school. 
+            <br><br>
+        Taking the target audience into consideration was a big part of this project, as it would determine how the content would be displayed and even what content would be included. It introduced me to the method of considering the content first, then the design. In this case, giving 9 year olds the atomic number for oxygen won't mean much to them, but telling them it is in the air we breath will.
+        
+        </div> <!-- closes bluebg div -->
+        
+        <video width="80%" autoplay loop>
+            <source src="videos/wanderlustprev.m4v" type="video/mp4">
+            Your browser does not support the video tag, sorry! Try upgrading to the latest version of your browser to see how awesome this project is.
+        </video>
+        
+        <h3 class="csheader">My Solution</h3> 
+        <hr class="horizline">
+        <p class="bio">Knowing that the target audience was young children, I decided to take an illustrative approach to the website. I needed to get their attention and make sure to keep it throughout the website, and right through to the page with the key facts on it, as the main purpose of the website is for it to be a study aid. I set out to do this through using bright colours, simple language and subtle CSS animations and transitions. 
+        </p>
+        
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements1.png" alt="project sketches - mockup">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements2.png" alt="project sketches - user persona">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements3.png" alt="project sketches - wireframing">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements4.png" alt="project sketches">
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        <br>
+        
+        <h3 class="csheader">The Process</h3>
+        <hr class="horizline">
+        <p class="bio">Beginning on paper, I sketched up a user persona to make sure I kept the target audience in mind throughout the project. I created some simple wireframes of ideas I had, then moved onto drawing more complex mockups. I went with a cartoon, flat style of illustration and made each page look like different parts of a chemistry lab.
+            <br> <br>
+        I took these drawings to illustrator, where I added in bright colours and decided to give everything a thick purple outline to tie the illustrations together. I created the background, foreground and svgs for the animations on one artboard, then separated the layers onto separate artboards ready to export for the web.
+            <br><br>
+        I placed the content into the appropriate pages, then went back and began adding the images in. I wanted to work with the content first as it is important in this website. I used CSS3 animations and transitions on buttons and svg images to create the effect of flickering flames, bursting bubbles and active buttons.
+            <br><br>
+        I documented my design process on <a  href="http://paigeboyddesign.tumblr.com/tagged/ixd301" target="_blank">Tumblr</a>, where you can see how I arrived at the final solution in greater detail!
+        <br><br> </p>
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements5.png" alt="project screenshot">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements6.png" alt="project screenshot">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements7.png" alt="project illustrations">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/elements/elements8.png" alt="project illustration">
+            </div>
+        </div>
+        <!-- /.row --> 
+        <br><br>
+        
+
+        <h3 class="csheader">Final Outcome</h3>
+        <hr class="horizline">
+        <p class="bio">Setting out, I knew I wanted to use this project as a chance to experiement with a new style of illustration, and I'm happy with how that turned out. I enjoyed the challenge of keeping all of the elements within the illustrations consistent. I also challenged myself to consider the micro-interactions of this website in more detail than I had before and I made use of CSS3 animations and transitions to do this.</p>
+            <br>
+            <a href="#" class="button">Coming Soon!</a>
+  
+    </div> <!-- closes .wrapper div -->
+      
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+</body>
+</html>

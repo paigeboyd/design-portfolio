@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>Extinct Bird | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+     <!-- STYLESHEETS & FAVICON -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    
+    <!-- GOOGLE ANALYTICS -->
+
+    
+    <!-- LIGHTBOX PLUGIN -->
+    <script src="../assets/lightbox-plus-jquery.min.js"></script>
+    
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <header>
+        
+        <h1 class="animated fadeInUp"><a href="../index.html">Paige Boyd</a></h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="../index.html#hello">About</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+               <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="../CV.pdf">CV</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+      
+        <h2 class="title">Extinct Bird</h2>
+        
+        <div class="bluebg">
+        <p class="bio">During year 2 we were given an assignment in the Narrative and Storytelling module which involved us developing a website around raw content. The content was an article for the National Geographic Magazine, titled 'An Extinct New Zealand Bird'. The brief was to take the content and design and develop a single-page website which would tell a story in a unique, interesting way. 
+             <br><br>
+        We were given the freedom to decide how we would tell the story to our audience. This meant considering the macro and micro-interactions throughout the website to enhance the protrayal of the story.
+        I knew going into this assignment that I wanted to use this opportunity to explore a style that I hadn't used before. I wanted to take the site in an illustrative angle, and I was also interested in learning more about horizontal scrolling.</p>
+        
+        </div> <!-- closes bluebg div -->
+        
+        <br>
+      
+        <video width="80%" autoplay loop>
+            <source src="videos/extinctbirdprev.m4v" type="video/mp4">
+            Your browser does not support the video tag, sorry! Try upgrading to the latest version of your browser to see how awesome this project is.
+        </video>
+   
+        
+        <h3 class="csheader">My Solution</h3> 
+        <hr class="horizline">
+        <p class="bio">I decided on horizontal scroll because I thought it would tie in well with the idea of telling a story, like how a user would turn pages in a book. To go along with the illustrative theme I decided to target the article towards a younger audience, which would allow me to use bright colours and cartoon-like illustrations. I recalled learning about New Zealand wildlife when I was younger, and I remembered our resources were magazine articles which were difficult to understand. Going with this I decided I wanted the background of the website to hint at the story, so I sketched up some ideas then took them to Illustrator.
+        </p>
+        
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird1.png" alt="project sketches - mockup">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird2.png" alt="project sketches - user persona">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird3.png" alt="project sketches - wireframing">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird4.png" alt="project sketches">
+            </div>
+        </div>
+        <!-- /.row -->
+        <br>
+        
+        <h3 class="csheader">Prototyping</h3>
+        <hr class="horizline">
+        <p class="bio">I created prototypes to learn how to use horizontal scrolling. I used fullPage.js, a JavaScript plug-in which is responsive and allows the user to scroll horizontally using both arrows and the arrows on their keyboard. It also works with swiping on mobile devices. I created prototypes of the <a href="images/extinctbird/ebmicrointer.html" target="_blank">micro-interactions</a> within the site, including CSS3 Animations, as well as looking at <a href="images/extinctbird/maps.html" target="_blank">maps</a> and <a  href="images/extinctbird/charts.html" target="_blank">charts</a> within the website; a requirement in the project, but also important to help tell the story.
+            <br><br></p>
+         <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird5.png" alt="project screenshot">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird6.png" alt="project screenshot">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird7.png" alt="project illustrations">
+            </div>
+            <div class="col-md-3 portfolio-item">
+                    <img class="img-responsive" src="images/extinctbird/extinctbird8.png" alt="project illustration">
+            </div>
+        </div>
+        <!-- /.row --> 
+        
+
+        <h3 class="csheader">Final Outcome</h3>
+        <hr class="horizline">
+        <p class="bio">Looking back on this project I am quite happy with how it turned out. Creating an illustrative website like this was a first for me and I enjoyed the process, despite there being quite a few challenges. This project has helped me to understand more about the importance of art direction and how crucial it is to be able to tell a story through my work as a UI designer.</p>
+        
+        
+        <a href="extinctbird/index.html" class="button">Take a Peek!</a>
+      
+ 
+    </div> <!-- closes .wrapper div -->
+      
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+</body>
+</html>

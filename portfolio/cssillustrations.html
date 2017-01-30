@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Paige Boyd" />
+    <meta name="description" content="Paige Boyd is an Interaction Design Student at Belfast School of Art with a passion for User Interface Design and Development. " />
+    <meta name="keywords" content="Web Designer Belfast, Website design, Website Designer Lurgan, Interaction Design, ixdbelfast, Ulster University, Freelancer, Student, Graphic Designer, Illustrator, User Interface Designer, HTML, CSS, JavaScript" />
+    
+    <title>CSS Illustrations | Paige</title>
+    
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- STYLESHEETS & FAVICON -->
+    <link href="../images/favicon.ico" rel="shortcut icon">
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../assets/lightbox.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    
+    <!-- GOOGLE ANALYTICS -->
+
+    
+    <!-- LIGHTBOX PLUGIN -->
+    <script src="../assets/lightbox-plus-jquery.min.js"></script>
+    
+<!-- SMOOTH SCROLL TO ANCHOR -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+    <header>
+        
+        <h1 class="animated fadeInUp"><a href="../index.html">Paige Boyd</a></h1>
+        <nav class="animated fadeInUp">
+            <ul>
+                <li><a href="../index.html#hello">About</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+               <!-- <li><a href="#">Journal</a></li> -->
+                <li><a href="../CV.pdf">CV</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+        
+        <h2 class="title">Css illustrations</h2>
+        <div class="bluebg">
+        <p class="bio">This is a collection of little illustrations I have created using code. I work with HTML and CSS to create various shapes then concentrate on the positioning to bring them together to create the final illustration. This is one of the few times where my process doesn't begin on paper! 
+            <br><br>
+        This is side project was started just to allow me to practice coding but bring a creative twist to it. I keep them on <a class="whitehover" href="http://codepen.io/collection/DqNamq/" target="_blank">CodePen</a>.</p>
+        
+        
+        </div> <!-- closes bluebg div -->
+        
+        <br>
+        
+         <h3 class="csheader">My Process</h3> 
+        <hr class="horizline">
+        <p class="bio">During the summer between Year 2 and Year 3, I wanted to get better at CSS, so I began watching some YouTube tutorials when I came across the method of creating illustrations using CSS. The process is simple in itself; breaking an illustration down to basic shapes, then creating divs which are styled and positioned to create the illustration. Some illustrations can be quite complex and so deciding how to create the individual shapes and how to position them can be quite challenging, but it is rewarding once the illustration finally takes shape! 
+        </p>
+        
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="http://codepen.io/paigeboyd1/pen/vKKyMd" target="_blank">
+                    <img class="img-responsive" src="images/cssillus/css1.png" alt="bees illustration">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="http://codepen.io/paigeboyd1/pen/aZNmoP" target="_blank">
+                    <img class="img-responsive" src="images/cssillus/css2.png" alt="apple devices illustration">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="http://codepen.io/paigeboyd1/pen/MeezqJ" target="_blank">
+                    <img class="img-responsive" src="images/cssillus/css3.png" alt="minion illustration">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="http://codepen.io/paigeboyd1/pen/rLYYrZ" target="_blank">
+                    <img class="img-responsive" src="images/cssillus/css4.png" alt="crime scene illustration">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+        
+        
+        
+   
+    </div> <!-- closes .wrapper div -->
+      
+    </div><!-- closes container div -->
+
+    <p class="copyright">Thanks for visiting! Copyright © Paige Boyd 2017 </p>
+</body>
+</html>
