@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hover Effects Prototype</title>
+    <meta charset="utf-8"/>
+    
+<!-- GOOGLE FONTS to be used in final website-->    
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    
+<!-- JavaScript for colour changing hover effects -->    
+    <script type="text/javascript">
+        document.getElementByClass('indigoblue').onmouseover.style.color = "#324AB2;';
+        document.getElementByClass('green').onmouseover.style.color = "#0BDA51;';
+        document.getElementByClass('olivegreen').onmouseover.style.color = "#556B2F;';
+        document.getElementByClass('purplishblack').onmouseover.style.color = "#2E0854;';
+        document.getElementByClass('scarlet').onmouseover.style.color = "#FF2400;';
+        document.getElementByClass('waxpink').onmouseover.style.color = "#FFE1E6;';
+        document.getElementByClass('red').onmouseover.style.color = "#FF0000;';
+        document.getElementByClass('reddishbrown').onmouseover.style.color = "#8E2323;';
+        document.getElementByClass('palepurple').onmouseover.style.color = "#B19CD9;';
+        document.getElementByClass('black').onmouseover.style.color = "#000;';
+</script>    
+    
+<style>
+    body {
+        margin: 0 auto;
+        max-width: 960px;
+        background-color: bisque;
+    }
+    
+    h1 {
+        font-family: 'Lora', serif;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    h3 {
+        font-family: 'Lora', serif;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: -10px;
+    }
+    
+    p {
+        font-family: 'Merriweather Sans', sans-serif;
+        text-align: justify;
+        font-weight: lighter;
+    }
+    
+    .info {
+        color: grey;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    
+/* On final website text will be white and will change to the colours below on hover */
+.indigoblue:hover { 
+    color: #324AB2;
+}
+
+.green:hover {
+    color: #0BDA51;
+}
+
+.olivegreen:hover {
+    color: #556B2F;
+}
+
+.purplishblack:hover {
+    color: #2E0854;
+}
+
+.scarlet:hover {
+    color: #FF2400;
+}
+
+.waxpink:hover {
+    color: #FFE1E6;
+}
+
+.red:hover {
+    color: #FF0000;
+}
+
+.reddishbrown:hover {
+    color: #8E2323;
+}
+
+.palepurple:hover {
+    color: #B19CD9;
+}
+
+.black:hover {
+    color: #000;
+}   
+    
+    
+    /* CSS ANIMATIONS/TRANSITIONS/HOVER EFFECTS */
+/*Images will have hover effects to add a degree of interaction to the site - from hover.css */
+
+.hvr-grow { /* Grow on mouse hover -- plan to use on national geographic logo */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-sink { /* Sink down on hover -- used on a takahe image */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
+/* Grow Rotate */
+.hvr-grow-rotate { /*Grow and rotate slightly on hover -- used on dr.orbell polaroid*/
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.3) rotate(-8deg);
+  transform: scale(1.3) rotate(-8deg);
+}
+    
+</style>
+</head>
+
+    
+    
+    
+    
+<body>
+    <h1>2C: Micro-Interactions</h1>
+    <hr>
+    
+    <h2>Hover Effects</h2>
+
+    
+    
+    <!-- Section of the article which will have the COLOR CHANGE HOVER -->
+    <p class="info">Hover over colours in the article to see the word change to the corresponding colour. Uses CSS and JavaScript.</p>
+<h3>Futile Wings Have Three-Foot Span</h3> 
+            <p>The full-grown takahe stands some twenty inches high and weighs about six pounds. The wings, though incapable of flight, may have a <i>three-foot span</i>. The adult bird is vividly colored. Head, neck, breast, and flanks are an <span class="indigoblue">iridescent indigo blue</span>, becoming brighter on the shoulders and changing to a <span class="green">malachite green</span> on the mantle. <br />
+<br />
+                The dark rump and upper tail coverts are <span class="olivegreen">olive green</span>, the abdomen and thighs <span class="purplishblack">purplish black</span>, and the under tail coverts white. The powerful beak is <span class="scarlet">scarlet</span> at the base, fading outwards to a <span class="waxpink">wax pink</span>. Legs and feet are <span class="red">red</span>, eyes <span class="reddishbrown">reddish brown</span>.</p> 
+    
+    <p>This brilliant color scheme is seen to full advantage only when the bird is approaching the observer or passing at right angles to him. In contrast to its showy parents, the young takahe wears only a uniform, <span class="black">soft black down</span>. The black beak is white-tipped, and the disproportionately large legs are a <span class="palepurple">pale purple</span>.</p>
+    <br />
+    <br />
+    <hr>
+    <br />
+    <br />
+    
+    
+    
+    <!-- Images throughout the website will have GROW/ROTATE HOVER EFFECTS -->
+    <p class="info">Hover over the images to see them grow/rotate.</p>
+    <img id="ngtitle" class="hvr-grow" src="nationalgeographic.png" alt="national geographic logo title" style="height: 110px; width: 300px;"> <br />
+    <p>National Geographic logo scales to 1.1 times its original size when hovered.</p>
+    <br />
+    <br />
+    
+    <img id="takaheaportrait" class="hvr-sink" src="takaheportrait.png" alt="Close up image of Adult Takahea" style="height:180px;width:150px;">
+    <p>Image of Takahe will sink down by 6 pixels when hovered, implying weight.</p>
+    <br />
+    <br />
+    
+    <img id="leftimg" class="hvr-grow-rotate" src="bentbilliardpipe.png" alt="Photograph of Dr Orbell and Human Ken" style="height: 200px; width: 180px">
+    <p>Illustration of a polaroid with Dr.Orbell and Human Ken will grow to 1.3 times its original size whilst also rotating by -8degrees. -8 ensures that the image rotates to the left (counter-clockwise).</p>
+    <br />
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

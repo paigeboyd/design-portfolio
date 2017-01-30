@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Charting Prototype</title>
+    <meta charset="utf-8"/>
+    
+<!-- GOOGLE FONTS to be used in final website-->    
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <!-- GOOGLE CHARTS PIE CHART -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Eggs', 'Percentage Fertile'],
+          ['Infertile',     40],
+          ['Fertile',      60],
+        ]);
+
+        var options = {
+            width: 400,
+            height: 250,
+            title: '1949 - 1950 Nesting Season',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    
+    
+<!-- GOOGLE CHARTS PIE CHART FINAL -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Eggs', 'Percentage Fertile'],
+          ['Infertile',     40],
+          ['Fertile',      60],
+        ]);
+
+        var options = {
+            backgroundColor: 'transparent',
+            width: 400,
+            height: 250,
+            title: '1949 - 1950 Nesting Season',
+            colors: ['#EB9532', '#F2784B']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    
+<style>
+    body {
+        margin: 0 auto;
+        max-width: 960px;
+        background-color: bisque;
+    }
+    
+    h1 {
+        font-family: 'Lora', serif;
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.8em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    h3 {
+        font-family: 'Lora', serif;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: -10px;
+    }
+    
+    p {
+        font-family: 'Merriweather Sans', sans-serif;
+        text-align: justify;
+        font-weight: lighter;
+    }
+    
+    .info {
+        color: grey;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    
+    /* TABLE */
+
+    table {
+        font-family: 'merriweather sans', sans-serif;
+    }    
+
+.takaheislands {    /* table on the 4th slide - carrying capacity of islands with takahe */
+    width: 50%;
+    background-color: rgba(0,0,0,0.4);
+    border-collapse: collapse;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.takaheislands td, .takaheislands th {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+.takaheislands th {
+    padding: 5px;
+    background-color: #fbd42c;
+    color: #000;
+}
+
+caption {
+    caption-side: top;
+    font-weight: lighter;
+    color: #000;
+}
+    
+    /* Final version of table */
+    .takaheislands2 {    /* table on the 4th slide - carrying capacity of islands with takahe */
+    width: 50%;
+    background-color: rgba(0,0,0,0.4);
+    border-collapse: collapse;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.takaheislands2 td, .takaheislands2 th {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+.takaheislands2 tr:hover {
+    color: #fbd42c;
+}
+
+.takaheislands2 th {
+    padding: 5px;
+    background-color: #fbd42c;
+    color: #000;
+}
+
+    .caption2 {
+        caption-side: bottom;
+    }
+    
+</style>
+</head>
+
+    
+    
+    
+    
+<body>
+    <h1>2E: Charting Prototypes</h1>
+    <hr>
+    
+    <h2>Google Charts</h2>
+    <div id="piechart1"></div>
+    <p>This is the default style of Google's pie chart. I chose to keep it 2D to keep the flat design theme consistent. I created the legend for infertile and fertile and named it 1949-1950 Nesting Season so it is obvious to the user what information the pie chart is reflecting. I chose to keep the hover effect because it makes it more interesting for the user.</p>
+    <br />
+    <br />
+    <div id="piechart"></div>
+    <p>I then removed the white background so that it was transparent, this makes it look more clean in my opinion. Finally I changed the colours of the pie chart to #EB9532 for infertile eggs and #F2784B for fertile eggs. These colours were picked to again keep the flat design theme going but they also stand out against the background image which is mainly blue.</p>
+    <br />
+    <hr>
+    <br />
+    
+    <h2>Takahe Table</h2>
+    <table class="takaheislands">
+        <caption><i>Estimated carrying capacity of islands with Takahe.</i></caption>
+        <tr>
+            <th>Island</th>
+            <th>Size (ha)</th>
+            <th>Habitat</th>
+            <th>No of Takahe Pairs</th>
+        </tr>
+        <tr>
+            <td>Kapiti</td>
+            <td>2023</td>
+            <td>Mostly forest</td>
+            <td>&lt; 10</td> <!--&lt; is code for '<' -->
+        </tr>
+        <tr>
+            <td>Mana</td>
+            <td>217</td>
+            <td>Mostly grassland</td>
+            <td>&gt; 10</td> <!--&gt; is code for'>' -->
+        </tr>
+        <tr>
+            <td>Maud</td>
+            <td>309</td>
+            <td>Mixed forest/grass</td>
+            <td>7 - 10</td>
+        </tr>
+        <tr>
+            <td>Tiritiri</td>
+            <td>210</td>
+            <td>Mixed forest/grass</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <p>My original idea for the table was to keep it consistent with the other elements which had a background on the website, so I chose to give the table a slightly transparent black background, so the background image could come through slightly but the text was still readable. I styled the table header differently so it would contrast with the rest of the table.</p>
+    
+    <br />
+    <table class="takaheislands2">
+        <caption class="caption2"><i>Estimated carrying capacity of islands with Takahe.</i></caption>
+        <tr>
+            <th>Island</th>
+            <th>Size (ha)</th>
+            <th>Habitat</th>
+            <th>No of Takahe Pairs</th>
+        </tr>
+        <tr>
+            <td>Kapiti</td>
+            <td>2023</td>
+            <td>Mostly forest</td>
+            <td>&lt; 10</td> <!--&lt; is code for '<' -->
+        </tr>
+        <tr>
+            <td>Mana</td>
+            <td>217</td>
+            <td>Mostly grassland</td>
+            <td>&gt; 10</td> <!--&gt; is code for'>' -->
+        </tr>
+        <tr>
+            <td>Maud</td>
+            <td>309</td>
+            <td>Mixed forest/grass</td>
+            <td>7 - 10</td>
+        </tr>
+        <tr>
+            <td>Tiritiri</td>
+            <td>210</td>
+            <td>Mixed forest/grass</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <p>I planned to keep the table quite minimal so the user isn't overwhelmed with information especially because the pages are already quite content-heavy. Therefore at the last minutes I decided to add a little amount of interaction to the table in the form of hover effects. When a row of the table is hovered over it will change to the same colour as the header, making it easier to read and keep track of which row you are reading.</p>
+    <br />
+    <hr>
+    <br />
+    <h2>Infographic</h2>
+    <img src="infographic.png" alt="New Zealand Infographic">
+    <p>I created this infographic using Adobe Illustrator and again kept it within the flat design theme. I mainly used images to portray the facts because I felt that this fit in the website better and the visual design of the information would break up such a text-heavy article. Ideally I would have liked to have coded this but I ran out of time as I encountered a few bugs in my website which needed to be fixed and took up a good amount of time. However I still like how the infographic turned out as a whole. Some images within the infographic draw in elements that have been used throughout the website, for example the Maori, Dr.Orbell and Takahe illustrations as well as the New Zealand Map.</p>
+    <br />
+    <br />
+    
+    
+    
+    
+    
+    
+</body>
+</html>
