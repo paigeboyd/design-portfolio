@@ -9,7 +9,7 @@ Colours - #C9DAEC (Blue) #E6CAC9 (Pink)
 
 @font-face {
     font-family: biloxiscript;
-    src: url("../fonts/biloxiscript.ttf") format('truetype');
+    src: url("./fonts/biloxiscript.ttf") format('truetype');
 }
 
 body {
