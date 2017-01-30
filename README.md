@@ -1,2 +1,3 @@
 # paigeboyd.github.io
-Design Portfolio
+
+Paige Boyd Portfolio
