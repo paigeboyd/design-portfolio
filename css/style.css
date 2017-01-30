@@ -8,7 +8,7 @@ Colours - #C9DAEC (Blue) #E6CAC9 (Pink)
 }
 
 @font-face {
-    font-family: BiloxiScript;
+    font-family: biloxiscript;
     src: url("fonts/biloxiscript.ttf") format('truetype');
 }
 
@@ -358,7 +358,7 @@ a.button:hover {
 /* ----- CASE STUDY PAGES ----- */
 
 .title {
-    font-family: 'BiloxiScript', 'Montserrat', serif;
+    font-family: 'biloxiscript', 'Montserrat', serif;
     font-size: 8em;
     text-align: left;
     margin-top: 3%;
