@@ -44,10 +44,7 @@ a:hover {
     text-decoration: none;
 }
 
-.container {
-    max-width: 1000px;
-    width: 100%;
-}
+
 
 
 /* ----- HEADER ----- */
@@ -135,6 +132,7 @@ h3 {
 }
 
 .intro {
+    text-align: left;
     font-size: 1.3em;
     font-weight: 700;
     padding-bottom: 10px;
@@ -142,20 +140,31 @@ h3 {
 }
 
 .bio {
-    margin: 0 auto;
-    max-width: 93%;
+    /*margin: 0 auto;*/
+    margin-left: 40px;
+    /*max-width: 93%;*/
+    max-width: 960px;
     text-align: left;
     padding-bottom: 20px;
     font-size: 1.1em;
 }
 
-.heroimg {
+/*.heroimg {
     display: block;
     margin: 0 auto;
     width: 88vw;
     padding-bottom: 5%;
     margin-left: -60px;
     margin-top: 5%;
+}*/
+
+.heroimg {
+    display: block;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 88%;
+    padding-bottom: 5%;
+    margin-top: 4%;
 }
 
 /* ----- WORK/PORTFOLIO SECTION ----- */
@@ -395,8 +404,6 @@ a.button:hover {
         font-size: 1.3em;
     }
     
-   
-    
 }
 
 @media screen and (max-width: 1040px) {
@@ -416,11 +423,11 @@ a.button:hover {
     .social {
         margin-bottom: 40px; /* adding space before the form */
     }
-    
+    /*
     .heroimg {
         margin-left: -4%;
         
-    }
+    }*/
 }
 
 @media screen and (max-width: 650px) {
@@ -460,9 +467,7 @@ a.button:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .heroimg {
-        margin-top: 10%;
-    }
+    
     
      .title {
         font-size: 4.4em;
@@ -484,9 +489,7 @@ a.button:hover {
         letter-spacing: 8px;
     }
     
-    .heroimg {
-        margin-top: 15%;
-    }
+    
     
     .title {
         font-size: 4.4em;
