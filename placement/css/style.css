@@ -142,7 +142,7 @@ nav {
 }
 
 .next {
-    font-family: font73209; /* Photina MT STD Bold */
+    font-family: 'Rufina', 'serif';
     float: right;
     color: #2b2e33;
 }
@@ -154,7 +154,7 @@ nav {
 }
 
 .previous {
-    font-family: font73209; /* Photina MT STD Bold */
+    font-family: 'Rufina', 'serif';
     float: left;
     color: #2b2e33;
 }
