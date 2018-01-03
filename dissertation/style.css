@@ -1,0 +1,260 @@
+body {
+    margin: 0 auto; /* this just resets things so everything is at edge of browser */
+    font-family: Oxygen;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2b2e33;
+}
+
+
+.MainContainer {
+    perspective: 1.1px; /*fixes issue with white bar down left side */
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ContentContainer-pink {
+    position: relative;
+    display: block;
+    background-color: #ffe7df;
+}
+
+.ContentContainer-white {
+    position: relative;
+    display: block;
+    background-color: #fffaf9;
+
+}
+
+.Content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 85px 0;
+} 
+
+.FooterContainer {
+    background-color: #ffe7df;
+}
+
+.footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px 0;
+} 
+
+.white {
+    background-color: #fff;
+}
+
+.HeroContainer {
+    display: flex;
+    flex-direction: column; /*this puts the h1&h2 in a stack */
+    flex: 0 1 auto;
+    flex-wrap: wrap; /* wraps the content when needed */
+    position: relative;
+    height: 100vh; /* full height of screen */
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/header-animate.svg);
+    background-size: cover; /*image will cover fill viewport */
+    background-color: #fffcfb;
+    background-repeat: no-repeat;
+    z-index: 2;
+    
+}
+
+.TitleContainer {
+    margin-top: -20%; /*positions the headers to the top of the screen */
+}
+
+/* ---------- TEXT ---------- */
+
+h1 {
+    font-family: 'Rufina';
+    color: #274645;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+    margin-top: -20px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Oxygen';
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: -15px;
+}
+
+h3 {
+    font-family: 'Rufina';
+    text-align: left;
+    font-size: 30px;
+    color: #274645;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #274645;
+}
+
+h4 {
+    font-family: 'Rufina';
+    font-size: 21px;
+    color: #274645;
+}
+
+h5 {
+    font-family: 'Oxygen';
+    font-weight: 200;
+    color: #274645;
+}
+
+p {
+    margin: 25px 0;
+    font-weight: 200;
+}
+
+a {
+    /*text-decoration: none;*/
+    color: #2b2e33;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+
+button {
+    border: 0;
+    border-bottom: 2px solid #d17c7c;
+    background-color: #ffe7df;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    height: 70px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.fa-angle-down {
+    color: #d17c7c;
+}
+
+.biblio {
+    font-size: 0.8em;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+
+
+/* ---------- Link Hover Effect ---------- */
+
+.ref:after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.8)), to(rgba(20, 20, 20, 0.8))) center 1.3em/100% 2.5px no-repeat;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)) center 1.2em/100% 2px no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400%;
+    will-change: transform;
+    z-index: 1;
+}
+
+.ref:hover:after {
+    -webkit-animation: underline-gradient 6s linear infinite;
+          animation: underline-gradient 6s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(139, 0, 30, 0.8)), color-stop(35%, rgba(255, 190, 159, 0.6)), color-stop(85%, rgba(139, 0, 30, 0.8)));
+    background-image: linear-gradient(90deg, rgba(139, 0, 30, 0.8) 15%, rgba(255, 190, 159, 0.6) 35%, rgba(139, 0, 30, 0.8) 85%);
+}
+
+.portfolio:after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.8)), to(rgba(20, 20, 20, 0.8))) center 1.3em/100% 2.5px no-repeat;
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)) center 1.4em/100% 2px no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400%;
+    will-change: transform;
+    z-index: 1;
+}
+
+.portfolio:hover:after {
+    -webkit-animation: underline-gradient 6s linear infinite;
+          animation: underline-gradient 6s linear infinite;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(139, 0, 30, 0.8)), color-stop(35%, rgba(255, 190, 159, 0.6)), color-stop(85%, rgba(139, 0, 30, 0.8)));
+    background-image: linear-gradient(90deg, rgba(139, 0, 30, 0.8) 15%, rgba(255, 190, 159, 0.6) 35%, rgba(139, 0, 30, 0.8) 85%);
+}
+
+@-webkit-keyframes underline-gradient {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-75%, 0%, 0);
+            transform: translate3d(-75%, 0%, 0);
+  }
+}
+
+@keyframes underline-gradient {
+  0% {
+    -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-75%, 0%, 0);
+            transform: translate3d(-75%, 0%, 0);
+  }
+}
+
+
+/* ---------- ANIMATION ---------- */
+
+/* this is to delay the title animation onload */
+h1 {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-iteration-count: infinite;
+}
+
+h2 {
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-iteration-count: infinite;
+}
+
+
+
+/* ---------- FOOTER ---------- */
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+   flex-basis: 50%; 
+}
+
+.right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
