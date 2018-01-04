@@ -5,18 +5,19 @@
 	@keyframes HJOckG9QoQfAnimation {
 		0% {
 			opacity: 0;
+			transform: scale(1, 1);
 		}
-		16.67% {
+		33.33% {
+			opacity: 1;
+			transform: scale(1, 0.9);
+		}
+		34.44% {
 			opacity: 0;
-		}
-		50% {
-			opacity: 1;
-		}
-		83.33% {
-			opacity: 1;
+			transform: scale(1, 1);
 		}
 		100% {
 			opacity: 0;
+			transform: scale(1, 1);
 		}
 	}
 
