@@ -8,11 +8,13 @@
 ----
 
 **Dissertation PDF**
+
 [The Language Game PDF](http://www.paigeboyd.co.uk/dissertation/dissertation.pdf)
 
 ----
 
 **Research**
+
 [Essay Research](https://bsl-for-kids.tumblr.com/tagged/ixd502)
 
 ----
