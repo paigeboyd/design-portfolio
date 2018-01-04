@@ -34,6 +34,13 @@ body {
     padding: 85px 0;
 } 
 
+.Content-img {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 85px 0 10px 0;;
+} 
+
+
 .FooterContainer {
     background-color: #ffe7df;
 }
@@ -265,6 +272,14 @@ h2 {
 }
 
 
+/* ---------- IMAGES ---------- */
+
+.teachersvsapps {
+    margin-left: 40%;
+    margin-bottom: -10px;
+    margin-top: -50px;
+    width: 50%;
+}
 
 
 
