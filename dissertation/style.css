@@ -153,7 +153,14 @@ li {
     padding-bottom: 10px;
 }
 
-
+.horizline {
+    display: block;
+    width: 85px;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #d17c7c;
+    margin-top: 85px;
+}
 
 /* ---------- Link Hover Effect ---------- */
 
@@ -247,14 +254,18 @@ h2 {
 }
 
 .left {
-   flex-basis: 50%; 
+    flex-basis: 50%;
+    margin-left: 10px;
 }
 
 .right {
     flex-basis: 50%;
     text-align: right;
+    margin-right: 10px;
 }
 
 
-/* ---------- NAVIGATION ---------- */
+
+
+
 
