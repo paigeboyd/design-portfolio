@@ -389,6 +389,9 @@ a.button:hover {
     margin: 0 auto;
 }
 
+.bluepadding {
+    padding-right: 40px;
+}
 
 .csheader { /* ----- CASE STUDY HEADER ----- */
     text-align: left; 
